@@ -7,7 +7,7 @@
     let offlineCount = 0;
     let lastUpdated = "ขณะนี้";
 
-    const apiUrl = "http://localhost:3000/bot";
+    const apiUrl = "https://cm64clmjp0006mnbszzxgi07v.iservkmitl.tech/bot";
 
     const fetchBotData = async () => {
         try {
