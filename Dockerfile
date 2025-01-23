@@ -1,23 +1,27 @@
-# ใช้ Node.js เป็น base image
+# Use an official Node runtime as the base image
 FROM node:18-alpine
 
-# ตั้ง working directory
+# Set working directory in the container
 WORKDIR /app
 
-# คัดลอกไฟล์ package.json และ package-lock.json
+# Copy package.json and package-lock.json
 COPY package*.json ./
 
-# ติดตั้ง dependencies
+# Install project dependencies
 RUN npm install
 
-# คัดลอกไฟล์ทั้งหมดในโปรเจกต์ไปยัง container
+# Copy the rest of the project files
 COPY . .
 
-# สร้างไฟล์ build
+# Create a .env file with placeholder values
+RUN echo "BASE_API_URl=http://localhost:3000" > .env
+RUN echo "JWT_SECRET=mammoz" >> .env
+
+# Build the Svelte application
 RUN npm run build
 
-# เปิดพอร์ตสำหรับใช้งาน
-EXPOSE 4173
+# Expose the port the app runs on
+EXPOSE 3000
 
-# รันคำสั่ง preview
-CMD ["npm", "run", "dev"]
+# Command to run the application
+CMD ["npm", "run", "preview"]

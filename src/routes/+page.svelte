@@ -1,8 +1,16 @@
 <script>
   import { goto } from '$app/navigation'; // นำเข้า goto สำหรับการนำทาง
+  import { page } from "$app/stores";
+
+  $: userProfileValue = $page.data.user;
   function handleSubmit() {
-    goto(`/login`);
+    if (userProfileValue) {
+      goto(`/desktop`);
+    }else{
+      goto(`/login`);
+    }
   }
+  
 </script>
 
 <div class="min-h-screen max-w mx-auto p-4 bg-[#2d1a64]">
