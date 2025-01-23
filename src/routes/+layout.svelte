@@ -1,6 +1,7 @@
-<script>
+<script  lang="ts">
     import "../app.css";
     import Navbar from "./Navbar.svelte";
+    
   </script>
   
   <svelte:head>
@@ -8,6 +9,6 @@
   </svelte:head>
   
   <div class="min-h-screen w-full">
-      <Navbar />
+      <Navbar/>
       <slot />
   </div>

@@ -4,6 +4,7 @@
     goto(`/login`);
   }
 </script>
+
 <div class="min-h-screen max-w mx-auto p-4 bg-[#2d1a64]">
   <div class="max-w-4xl mx-auto my-8 text-white px-4 w-full sm:grid grid-cols-2 gap-4">
     <div class="mt-5">
