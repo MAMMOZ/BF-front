@@ -11,6 +11,10 @@
   let offlineCount = 0;
   let lastUpdated = "ขณะนี้";
 
+  // Search variables
+  let searchTerm = "";
+  let filteredData = [];
+
   const timeAgo = (timestamp) => {
     const now = new Date();
     const updatedTime = new Date(timestamp);
@@ -35,6 +39,18 @@
     offlineCount = currentData.length - onlineCount;
     lastUpdated = new Date().toLocaleTimeString("th-TH");
   };
+
+  $: {
+    if (searchTerm) {
+      filteredData = currentData.filter(item => 
+        Object.values(item).some(value => 
+          String(value).toLowerCase().includes(searchTerm.toLowerCase())
+        )
+      );
+    } else {
+      filteredData = currentData;
+    }
+  }
 
   function getscript() {
     const text = "hi mammoz";
@@ -285,6 +301,7 @@
         type="text"
         id="searchInput"
         placeholder="Search"
+        bind:value={searchTerm}
         class="w-full bg-gray-900/30 backdrop-blur-sm rounded-xl py-2 px-4 pl-10 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-purple-500"
       />
       <svg
