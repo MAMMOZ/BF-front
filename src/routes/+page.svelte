@@ -85,7 +85,8 @@
                     <p class="text-gray-400">Billed monthly</p>
                   </div>
                 </div>
-                <a href="#" aria-describedby="tier-starter" class="rounded-md bg-white/10 px-3 py-2 text-center text-sm/6 font-semibold text-white hover:bg-white/20 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">Buy this plan</a>
+                <button class="rounded-md bg-white/10 px-3 py-2 text-center text-sm/6 font-semibold text-white hover:bg-white/20 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">Buy this plan </button>
+                <!-- <a href="#" aria-describedby="tier-starter" class="rounded-md bg-white/10 px-3 py-2 text-center text-sm/6 font-semibold text-white hover:bg-white/20 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">Buy this plan</a> -->
               </div>
               <div class="mt-8 flow-root sm:mt-10">
                 <ul role="list" class="-my-2 divide-y divide-white/5 border-t border-white/5 text-sm/6 text-white lg:border-t-0">
@@ -124,7 +125,8 @@
                     <p class="text-gray-500">Billed monthly</p>
                   </div>
                 </div>
-                <a href="#" aria-describedby="tier-scale" class="rounded-md bg-indigo-600 px-3 py-2 text-center text-sm/6 font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Buy this plan</a>
+                <button class="rounded-md bg-white/10 px-3 py-2 text-center text-sm/6 font-semibold text-white hover:bg-white/20 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">Buy this plan </button>
+                <!-- <a href="#" aria-describedby="tier-scale" class="rounded-md bg-indigo-600 px-3 py-2 text-center text-sm/6 font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Buy this plan</a> -->
               </div>
               <div class="mt-8 flow-root sm:mt-10">
                 <ul role="list" class="-my-2 divide-y divide-gray-900/5 border-t border-gray-900/5 text-sm/6 text-gray-600 lg:border-t-0">
@@ -170,7 +172,8 @@
                     <p class="text-gray-400">Billed monthly</p>
                   </div>
                 </div>
-                <a href="#" aria-describedby="tier-growth" class="rounded-md bg-white/10 px-3 py-2 text-center text-sm/6 font-semibold text-white hover:bg-white/20 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">Buy this plan</a>
+                <button class="rounded-md bg-white/10 px-3 py-2 text-center text-sm/6 font-semibold text-white hover:bg-white/20 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">Buy this plan </button>
+                <!-- <a href="#" aria-describedby="tier-growth" class="rounded-md bg-white/10 px-3 py-2 text-center text-sm/6 font-semibold text-white hover:bg-white/20 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">Buy this plan</a> -->
               </div>
               <div class="mt-8 flow-root sm:mt-10">
                 <ul role="list" class="-my-2 divide-y divide-white/5 border-t border-white/5 text-sm/6 text-white lg:border-t-0">

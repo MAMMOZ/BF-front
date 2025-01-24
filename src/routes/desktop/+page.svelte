@@ -42,8 +42,8 @@
 
   $: {
     if (searchTerm) {
-      filteredData = currentData.filter(item => 
-        Object.values(item).some(value => 
+      filteredData = currentData.filter((item) =>
+        Object.values(item).some((value) =>
           String(value).toLowerCase().includes(searchTerm.toLowerCase())
         )
       );
@@ -67,13 +67,13 @@
 
   async function fetchBotData() {
     try {
-        const response = await fetch(`http://localhost:3000/bot`, {
+      const response = await fetch(`https://cm64clmjp0006mnbszzxgi07v.iservkmitl.tech/bot`, {
         method: "POST", // ใช้ POST method
         headers: {
-            "Content-Type": "application/json", // ระบุว่า body เป็น JSON
+          "Content-Type": "application/json", // ระบุว่า body เป็น JSON
         },
         body: JSON.stringify({ username }), // ส่ง username ผ่าน body
-        });
+      });
       const newData = await response.json();
       currentData = newData.data;
       summary = newData.summary;
