@@ -84,7 +84,7 @@
   }
 
   onMount(() => {
-    updateSummary();
+    // updateSummary();
     fetchBotData();
     // เรียกใช้ fetchBotData ทุกๆ 10 วินาที
     const intervalId = setInterval(() => {
