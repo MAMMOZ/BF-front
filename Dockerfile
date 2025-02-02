@@ -21,7 +21,7 @@ RUN echo "JWT_SECRET=mammoz" >> .env
 RUN npm run build
 
 # Expose the correct port for production
-EXPOSE 4173  # SvelteKit default preview port
+EXPOSE 4173
 
 # Run the application in production mode
-CMD ["npm", "run", "preview", "--", "--host", "0.0.0.0"]
+CMD ["npm", "run", "preview", "--", "--port", "3000", "--host", "0.0.0.0"]
