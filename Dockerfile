@@ -11,7 +11,7 @@ COPY package*.json ./
 RUN rm -rf node_modules package-lock.json
 
 # Install project dependencies
-RUN npm install --global vite
+RUN npm install
 
 # Copy the rest of the project files
 COPY . .
