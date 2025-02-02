@@ -13,6 +13,9 @@ RUN rm -rf node_modules package-lock.json
 # Install project dependencies
 RUN npm install
 
+# ติดตั้ง vite เป็น global
+RUN npm install --global vite
+
 # Copy the rest of the project files
 COPY . .
 
