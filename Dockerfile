@@ -13,10 +13,6 @@ RUN npm install
 # Copy the rest of the project files
 COPY . .
 
-# Create a .env file with placeholder values
-RUN echo "BASE_API_URL=http://localhost:3000" > .env
-RUN echo "JWT_SECRET=mammoz" >> .env
-
 # Build the Svelte application for production
 RUN npm run build
 
@@ -24,4 +20,4 @@ RUN npm run build
 EXPOSE 4173
 
 # Run the application in production mode
-CMD ["npm", "run", "preview", "--", "--port", "3000", "--host", "0.0.0.0"]
+CMD ["npm", "run", "preview", "--", "--port", "4173", "--host", "0.0.0.0"]
