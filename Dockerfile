@@ -7,6 +7,9 @@ WORKDIR /app
 # Copy package.json and package-lock.json
 COPY package*.json ./
 
+# ลบ node_modules และ package-lock.json (ถ้ามี)
+RUN rm -rf node_modules package-lock.json
+
 # Install project dependencies
 RUN npm install --global vite
 
